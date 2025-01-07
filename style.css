@@ -1,0 +1,249 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Стили для шапки */
+header {
+    background-color: #ca571e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Стиль для раздела Как мы готовим проект */
+#how-we-work {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#how-we-work h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.process {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.step {
+    width: 200px;
+    padding: 20px;
+    background-color: #ca571e;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 16px;
+}
+
+/* Услуги */
+#services {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+#services h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* Оформление секции нашей команды */
+#team {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Портфолио */
+#portfolio {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Стили для раздела с клиентами */
+#clients {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.client-card {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.client-card:hover::after {
+    content: 'Проект описан';
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Контент хаб */
+#content-hub {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.content-card {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.content-card p {
+    font-size: 16px;
+}
+
+/* Стили для квиза */
+#quiz-form {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+#quiz-form h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.question input,
+.question select,
+.question textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.question textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #ca571e;
+}
+
+/* Стили для чекбоксов */
+.question input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    accent-color: #ca571e; /* Основной цвет для чекбоксов */
+}
+
+.question input[type="checkbox"]:checked {
+    background-color: #ca571e;
+    border-color: #ca571e;
+}

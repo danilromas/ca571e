@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб крепость</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Главная -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Веб крепость">
+        </div>
+        <h1>Веб крепость</h1>
+        <p>Мы создаем инновационные решения для вашего бизнеса</p>
+    </header>
+
+    <!-- Как мы готовим ваш проект? -->
+    <section id="how-we-work">
+        <h2>Как мы готовим ваш проект?</h2>
+        <div class="process">
+            <div class="step">
+                <h3>01</h3>
+                <p>Утверждение ТЗ и ожидаемого результата</p>
+            </div>
+            <div class="step">
+                <h3>02</h3>
+                <p>Составление перечня задач</p>
+            </div>
+            <div class="step">
+                <h3>03</h3>
+                <p>Анализ</p>
+            </div>
+            <div class="step">
+                <h3>04</h3>
+                <p>Разработка и тестирование</p>
+            </div>
+            <div class="step">
+                <h3>05</h3>
+                <p>Передача продукта и поддержка</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="services">
+        <h2>Услуги</h2>
+        <div class="service">
+            <h3>Наши технологии</h3>
+            <p>Мы используем языки программирования такие как PHP, JavaScript, Python, а также профессионально работаем с Figma для проектирования.</p>
+        </div>
+        <div class="service">
+            <h3>Разработка корпоративных сайтов и высоконагруженных сервисов</h3>
+            <p>Создаем надежные и масштабируемые решения для вашего бизнеса.</p>
+        </div>
+        <div class="service">
+            <h3>Разработка мобильных приложений</h3>
+            <p>Разрабатываем кроссплатформенные приложения для iOS и Android.</p>
+        </div>
+        <div class="service">
+            <h3>Разработка лендингов и интернет-магазинов</h3>
+            <p>С нами ваш бизнес в интернете будет выглядеть достойно.</p>
+        </div>
+        <div class="service">
+            <h3>SMM и digital (брендинг)</h3>
+            <p>Помогаем продвигать ваш бренд в социальных сетях и цифровом пространстве.</p>
+        </div>
+    </section>
+
+    <!-- Наша команда -->
+    <section id="team">
+        <h2>Наша команда</h2>
+        <p>Наши специалисты обладают многолетним опытом и профессионализмом. Мы создаем проекты с любовью!</p>
+        <!-- Добавьте информацию о вашей команде -->
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio">
+        <h2>Портфолио</h2>
+        <p>Посмотрите наши успешные проекты, которые мы реализовали для клиентов.</p>
+        <!-- Здесь будут ссылки или изображения ваших проектов -->
+    </section>
+
+    <!-- Наши Клиенты -->
+    <section id="clients">
+        <h2>Наши Клиенты</h2>
+        <div class="client-card">
+            <p>Проект 1</p>
+            <!-- Краткая информация появляется при наведении -->
+        </div>
+        <div class="client-card">
+            <p>Проект 2</p>
+        </div>
+        <!-- Добавьте другие карточки -->
+    </section>
+
+    <!-- Контент хаб -->
+    <section id="content-hub">
+        <h2>Контент - хаб</h2>
+        <div class="content-card">
+            <h3>Статья 1</h3>
+            <p>Краткое описание статьи.</p>
+        </div>
+        <div class="content-card">
+            <h3>Статья 2</h3>
+            <p>Краткое описание статьи.</p>
+        </div>
+        <!-- Добавьте другие карточки -->
+    </section>
+
+    <section id="quiz-form">
+        <h2>Оставить заявку</h2>
+        <form action="#" method="POST" id="quiz">
+            <!-- Вопрос 1 -->
+            <div class="question">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <!-- Вопрос 2 -->
+            <div class="question">
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <!-- Вопрос 3 -->
+            <div class="question">
+                <label for="project-type">Тип вашего проекта:</label>
+                <select id="project-type" name="project-type" required>
+                    <option value="corporate-site">Корпоративный сайт</option>
+                    <option value="landing">Лендинг</option>
+                    <option value="mobile-app">Мобильное приложение</option>
+                    <option value="online-store">Интернет-магазин</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+    
+            <!-- Вопрос 4 -->
+            <div class="question">
+                <label for="budget">Бюджет проекта (ориентировочно):</label>
+                <input type="number" id="budget" name="budget" placeholder="Укажите сумму" required>
+            </div>
+    
+            <!-- Вопрос 5 -->
+            <div class="question">
+                <label for="deadline">Желаемые сроки выполнения:</label>
+                <input type="date" id="deadline" name="deadline" required>
+            </div>
+    
+            <!-- Вопрос 6 -->
+            <div class="question">
+                <label for="features">Какие особенности или функции вы хотите видеть в проекте?</label>
+                <textarea id="features" name="features" placeholder="Опишите особенности" required></textarea>
+            </div>
+    
+            <!-- Вопрос 7 -->
+            <div class="question">
+                <label>Какие технологии вам интересны для вашего проекта?</label>
+                <div>
+                    <input type="checkbox" id="php" name="technologies" value="PHP">
+                    <label for="php">PHP</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="react" name="technologies" value="React">
+                    <label for="react">React</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="python" name="technologies" value="Python">
+                    <label for="python">Python</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="nodejs" name="technologies" value="Node.js">
+                    <label for="nodejs">Node.js</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="flutter" name="technologies" value="Flutter">
+                    <label for="flutter">Flutter</label>
+                </div>
+            </div>
+    
+            <!-- Вопрос 8 -->
+            <div class="question">
+                <label for="additional">Дополнительные комментарии:</label>
+                <textarea id="additional" name="additional" placeholder="Дополнительная информация"></textarea>
+            </div>
+    
+            <!-- Кнопка отправки -->
+            <div class="question">
+                <button type="submit">Отправить заявку</button>
+            </div>
+        </form>
+    </section>
+    
+
+</body>
+</html>
