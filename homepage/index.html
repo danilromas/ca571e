@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Web-castle</a>
+        <a href="#" class="logo"><img src="./image/logo1.png" alt="" srcset=""></a>
 
         <nav class="navbar">
             <a href="" class="active">1</a>
@@ -22,20 +22,94 @@
 
     <section class="home">
         <div class="home-content">
-            <h1>web web web</h1>
-            <h3>goida goida goida</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptates deserunt sit exercitationem esse facere aut, error iure expedita tempora. Dignissimos perferendis nemo natus voluptates mollitia veritatis consequatur possimus repellendus.</p>
+            <h1><span>Web</span> Solutions for <span>Your</span> Business</h1>
+            <h3>Innovate | Create | Inspire</h3>
+            <p>Transform your ideas into digital realities with cutting-edge technology and sleek design.</p>
             <div class="btn-box">
-                <a href="">1</a>
-                <a href="">2</a>
+                <a href="#services">Our Services</a>
+                <a href="#contact">Get in Touch</a>
             </div>
         </div>
-
+    
         <div class="home-sci">
             <a href=""><i class='bx bxl-vk'></i></a>
             <a href=""><i class='bx bxl-telegram'></i></a>
             <a href=""><i class='bx bxl-linkedin'></i></a>
         </div>
+    
+        <div class="background-animation"></div>
     </section>
+
+<hr>
+
+    <section class="project-process">
+        <div class="process-content">
+            <h2>Как мы готовим наш проект</h2>
+            <div class="process-step active" data-step="1">
+                <img src="img/idea.png" alt="Идея">
+                <p>Формирование идеи и концепции проекта.</p>
+            </div>
+            <div class="process-step" data-step="2">
+                <img src="img/design.png" alt="Дизайн">
+                <p>Разработка дизайна и прототипов.</p>
+            </div>
+            <div class="process-step" data-step="3">
+                <img src="img/development.png" alt="Разработка">
+                <p>Программирование и интеграция функционала.</p>
+            </div>
+            <div class="process-step" data-step="4">
+                <img src="img/testing.png" alt="Тестирование">
+                <p>Тестирование и исправление ошибок.</p>
+            </div>
+            <div class="process-step" data-step="5">
+                <img src="img/launch.png" alt="Запуск">
+                <p>Запуск проекта и поддержка.</p>
+            </div>
+        </div>
+        <div class="process-navigation">
+            <div class="navigation-step" data-step="1">
+                <span class="chess-piece">&#9817;</span>
+                <p>Идея</p>
+            </div>
+            <div class="navigation-step" data-step="2">
+                <span class="chess-piece">&#9817;</span>
+                <p>Дизайн</p>
+            </div>
+            <div class="navigation-step" data-step="3">
+                <span class="chess-piece">&#9817;</span>
+                <p>Разработка</p>
+            </div>
+            <div class="navigation-step" data-step="4">
+                <span class="chess-piece">&#9817;</span>
+                <p>Тестирование</p>
+            </div>
+            <div class="navigation-step" data-step="5">
+                <span class="chess-piece queen">&#9813;</span>
+                <p>Запуск</p>
+            </div>
+        </div>
+    </section>
+    
 </body>
+    <script>
+        const steps = document.querySelectorAll('.process-step');
+        const navSteps = document.querySelectorAll('.navigation-step');
+
+        window.addEventListener('load', () => {
+            document.querySelector('.process-content').classList.add('active');
+            document.querySelector('.process-navigation').classList.add('active');
+        });
+
+        navSteps.forEach(step => {
+            step.addEventListener('click', () => {
+                const stepNum = step.getAttribute('data-step');
+
+                steps.forEach(s => s.classList.remove('active'));
+                document.querySelector(`.process-step[data-step="${stepNum}"]`).classList.add('active');
+
+                navSteps.forEach(n => n.classList.remove('active'));
+                step.classList.add('active');
+            });
+        });
+    </script>
 </html>

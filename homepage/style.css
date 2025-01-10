@@ -9,12 +9,12 @@
 }
 
 body{
-    background-color: #ca571e;
+    background-color: #ededed;
     color: #ededed;
 }
 
 .header{
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     width: 100%;
@@ -28,10 +28,11 @@ body{
 
 .logo{
     font-size: 25px;
-    color: #ededed;
+    color: #CA571E;
     text-decoration: none;
     font-weight: 600;
 }
+
 
 .logo::before {
     content: '';
@@ -47,7 +48,7 @@ body{
 
 .navbar a{
     font-size: 18px;
-    color: #ededed;
+    color: black;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -76,6 +77,7 @@ body{
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
+    color: #ca571e;
 }
 
 .home-content h1::before {
@@ -218,10 +220,10 @@ body{
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #ededed;
+    border: 2px solid #ca571e;
     border-radius: 50%;
     font-size: 20px;
-    color: #ededed;
+    color: #ca571e;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -268,4 +270,115 @@ body{
     100% {
         width: 0;
     }
+}
+
+
+/*Как мы готовим ваш проект?*/
+
+.project-process {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px 10%;
+    background-color: white;
+    color: #552a15;
+    overflow: hidden;
+}
+
+.process-content {
+    width: 60%;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1.5s forwards ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.process-content h2 {
+    font-size: 48px;
+    color: #ca571e;
+    margin-bottom: 50px;
+    text-align: center;
+    animation: slideDown 1.5s ease-in-out;
+}
+
+@keyframes slideDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.process-step {
+    display: none;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.process-step.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.process-step img {
+    width: 160px;
+    margin-right: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.process-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInRight 1.5s forwards ease-in-out;
+}
+
+@keyframes fadeInRight {
+    0% { opacity: 0; transform: translateX(50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.navigation-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.navigation-step:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    background-color: rgba(202, 87, 30, 0.1);
+}
+
+.chess-piece {
+    font-size: 36px;
+    color: #552a15;
+    opacity: 0;
+    transition: transform 0.5s ease, color 0.5s ease, opacity 0.5s;
+}
+
+.navigation-step.active .chess-piece, .navigation-step:hover .chess-piece {
+    opacity: 1;
+    color: #ca571e;
+    transform: scale(1.2);
 }
