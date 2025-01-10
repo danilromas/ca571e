@@ -1,198 +1,161 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Веб крепость</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Главная -->
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Веб крепость">
-        </div>
-        <h1>Веб крепость</h1>
-        <p>Мы создаем инновационные решения для вашего бизнеса</p>
-    </header>
-
-    <!-- Как мы готовим ваш проект? -->
-    <section id="how-we-work">
-        <h2>Как мы готовим ваш проект?</h2>
-        <div class="process">
-            <div class="step">
-                <h3>01</h3>
-                <p>Утверждение ТЗ и ожидаемого результата</p>
-            </div>
-            <div class="step">
-                <h3>02</h3>
-                <p>Составление перечня задач</p>
-            </div>
-            <div class="step">
-                <h3>03</h3>
-                <p>Анализ</p>
-            </div>
-            <div class="step">
-                <h3>04</h3>
-                <p>Разработка и тестирование</p>
-            </div>
-            <div class="step">
-                <h3>05</h3>
-                <p>Передача продукта и поддержка</p>
+<section class="project-process">
+    <div class="process-content">
+        <h2>Как мы готовим ваш проект</h2>
+        <div class="process-step active" data-step="1">
+            <img src="./image/idea.png" alt="Идея" class="process-image">
+            <div>
+                <h3>Формирование идеи</h3>
+                <p>Анализируем рынок и потребности клиента, создавая уникальную концепцию проекта.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Услуги -->
-    <section id="services">
-        <h2>Услуги</h2>
-        <div class="service">
-            <h3>Наши технологии</h3>
-            <p>Мы используем языки программирования такие как PHP, JavaScript, Python, а также профессионально работаем с Figma для проектирования.</p>
-        </div>
-        <div class="service">
-            <h3>Разработка корпоративных сайтов и высоконагруженных сервисов</h3>
-            <p>Создаем надежные и масштабируемые решения для вашего бизнеса.</p>
-        </div>
-        <div class="service">
-            <h3>Разработка мобильных приложений</h3>
-            <p>Разрабатываем кроссплатформенные приложения для iOS и Android.</p>
-        </div>
-        <div class="service">
-            <h3>Разработка лендингов и интернет-магазинов</h3>
-            <p>С нами ваш бизнес в интернете будет выглядеть достойно.</p>
-        </div>
-        <div class="service">
-            <h3>SMM и digital (брендинг)</h3>
-            <p>Помогаем продвигать ваш бренд в социальных сетях и цифровом пространстве.</p>
-        </div>
-    </section>
-
-    <!-- Наша команда -->
-    <section id="team">
-        <h2>Наша команда</h2>
-        <p>Наши специалисты обладают многолетним опытом и профессионализмом. Мы создаем проекты с любовью!</p>
-    </section>
-
-    <!-- Портфолио -->
-    <section id="portfolio">
-        <h2>Портфолио</h2>
-        <p>Посмотрите наши успешные проекты, которые мы реализовали для клиентов.</p>
-        <!-- Здесь будут ссылки или изображения проектов -->
-    </section>
-
-    <!-- Наши Клиенты -->
-    <section id="clients">
-        <h2>Наши Клиенты</h2>
-        <div class="client-card">
-            <p>Проект 1</p>
-            <!-- Краткая информация появляется при наведении -->
-        </div>
-        <div class="client-card">
-            <p>Проект 2</p>
-        </div>
-    </section>
-
-    <!-- Контент хаб -->
-    <section id="content-hub">
-        <h2>Контент - хаб</h2>
-        <div class="content-card">
-            <h3>Статья 1</h3>
-            <p>Краткое описание статьи.</p>
-        </div>
-        <div class="content-card">
-            <h3>Статья 2</h3>
-            <p>Краткое описание статьи.</p>
-        </div>
-    </section>
-
-
-    <!-- Квиз сайта -->
-
-    <section id="quiz-form">
-        <h2>Оставить заявку</h2>
-        <form action="#" method="POST" id="quiz">
-            <!-- Вопрос 1 -->
-            <div class="question">
-                <label for="name">Ваше имя:</label>
-                <input type="text" id="name" name="name" required>
+        <div class="process-step" data-step="2">
+            <img src="./image/design.png" alt="Дизайн" class="process-image">
+            <div>
+                <h3>Дизайн и прототипирование</h3>
+                <p>Создаем стильный интерфейс и интерактивные прототипы для согласования.</p>
             </div>
-    
-            <!-- Вопрос 2 -->
-            <div class="question">
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" name="email" required>
+        </div>
+        <div class="process-step" data-step="3">
+            <img src="./image/development.png" alt="Разработка" class="process-image">
+            <div>
+                <h3>Разработка</h3>
+                <p>Реализуем проект с использованием современных технологий.</p>
             </div>
-    
-            <!-- Вопрос 3 -->
-            <div class="question">
-                <label for="project-type">Тип вашего проекта:</label>
-                <select id="project-type" name="project-type" required>
-                    <option value="corporate-site">Корпоративный сайт</option>
-                    <option value="landing">Лендинг</option>
-                    <option value="mobile-app">Мобильное приложение</option>
-                    <option value="online-store">Интернет-магазин</option>
-                    <option value="other">Другое</option>
-                </select>
+        </div>
+        <div class="process-step" data-step="4">
+            <img src="./image/testing.png" alt="Тестирование" class="process-image">
+            <div>
+                <h3>Тестирование</h3>
+                <p>Проводим тщательное тестирование для обеспечения качества.</p>
             </div>
-    
-            <!-- Вопрос 4 -->
-            <div class="question">
-                <label for="budget">Бюджет проекта (ориентировочно):</label>
-                <input type="number" id="budget" name="budget" placeholder="Укажите сумму" required>
+        </div>
+        <div class="process-step" data-step="5">
+            <img src="./image/launch.png" alt="Запуск" class="process-image">
+            <div>
+                <h3>Запуск и поддержка</h3>
+                <p>Запускаем проект и обеспечиваем техническую поддержку.</p>
             </div>
-    
-            <!-- Вопрос 5 -->
-            <div class="question">
-                <label for="deadline">Желаемые сроки выполнения:</label>
-                <input type="date" id="deadline" name="deadline" required>
-            </div>
-    
-            <!-- Вопрос 6 -->
-            <div class="question">
-                <label for="features">Какие особенности или функции вы хотите видеть в проекте?</label>
-                <textarea id="features" name="features" placeholder="Опишите особенности" required></textarea>
-            </div>
-    
-            <!-- Вопрос 7 -->
-            <div class="question">
-                <label>Какие технологии вам интересны для вашего проекта?</label>
-                <div>
-                    <input type="checkbox" id="php" name="technologies" value="PHP">
-                    <label for="php">PHP</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="react" name="technologies" value="React">
-                    <label for="react">React</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="python" name="technologies" value="Python">
-                    <label for="python">Python</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="nodejs" name="technologies" value="Node.js">
-                    <label for="nodejs">Node.js</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="flutter" name="technologies" value="Flutter">
-                    <label for="flutter">Flutter</label>
-                </div>
-            </div>
-    
-            <!-- Вопрос 8 -->
-            <div class="question">
-                <label for="additional">Дополнительные комментарии:</label>
-                <textarea id="additional" name="additional" placeholder="Дополнительная информация"></textarea>
-            </div>
-    
-            <!-- Кнопка отправки -->
-            <div class="question">
-                <button type="submit">Отправить заявку</button>
-            </div>
-        </form>
-    </section>
-    
+        </div>
+    </div>
+    <div class="process-navigation">
+        <div class="navigation-step active" data-step="1">
+            <span class="nav-icon">1</span>
+            <p>Идея</p>
+        </div>
+        <div class="navigation-step" data-step="2">
+            <span class="nav-icon">2</span>
+            <p>Дизайн</p>
+        </div>
+        <div class="navigation-step" data-step="3">
+            <span class="nav-icon">3</span>
+            <p>Разработка</p>
+        </div>
+        <div class="navigation-step" data-step="4">
+            <span class="nav-icon">4</span>
+            <p>Тестирование</p>
+        </div>
+        <div class="navigation-step" data-step="5">
+            <span class="nav-icon">5</span>
+            <p>Запуск</p>
+        </div>
+    </div>
+</section>
 
-</body>
-</html>
+<style>
+.project-process {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 5%;
+    background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.process-content {
+    width: 60%;
+}
+
+.process-content h2 {
+    font-size: 48px;
+    color: #2a5298;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.process-step {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.process-image {
+    width: 90px;
+    height: 90px;
+    margin-right: 20px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.process-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navigation-step {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-step:hover, .navigation-step.active {
+    background-color: #2a5298;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.nav-icon {
+    background-color: #2a5298;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-weight: bold;
+}
+</style>
+
+<script>
+const steps = document.querySelectorAll('.process-step');
+const navSteps = document.querySelectorAll('.navigation-step');
+
+navSteps.forEach(step => {
+    step.addEventListener('click', () => {
+        const stepNum = step.getAttribute('data-step');
+
+        steps.forEach(s => s.classList.remove('active'));
+        document.querySelector(`.process-step[data-step="${stepNum}"]`).classList.add('active');
+
+        navSteps.forEach(n => n.classList.remove('active'));
+        step.classList.add('active');
+    });
+});
+</script>
