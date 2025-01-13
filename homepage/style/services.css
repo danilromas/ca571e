@@ -1,0 +1,119 @@
+/*Сервисы*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+/* Сохранены текущие стили */
+
+.light {
+    font-weight: 300;
+}
+
+.services {
+    /* height: 100vh;
+    padding: 1% 10%; */
+}
+
+.services h1 {
+    text-align: center;
+    position: relative;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ca571e;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: 1s;
+}
+
+details > summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 48pt;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+details[open] > summary {
+    color: #ca571e;
+}
+
+.desc {
+    text-align: left;
+    line-height: 1;
+    font-size: 46pt;
+    color: black;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+details[open] .desc {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-grid {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 100%;
+}
+
+.card {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 8px;
+    color: black;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+details[open] .card {
+    opacity: 1;
+    transform: scale(1);
+}
+
+summary > .bx {
+    font-size: 50px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary > .bx {
+    transform: rotate(45deg);
+}
+
+.card > .bx {
+    font-size: 56px;
+    color: #ca571e;
+}
+
+.card-desc {
+    font-size: 24pt;
+    flex: 1;
+    text-align: left;
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Анимация заголовка */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,103 @@
+/*Контен-хаб*/
+.content-hub {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .content-hub .content-hub-container h1 {
+    position: relative;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ca571e;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: 1s;
+  }
+
+.content-hub ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+.content-hub li {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+
+  .content-hub li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .content-hub .t-feed__post-imgwrapper {
+    position: relative;
+    aspect-ratio: 1.3;
+    overflow: hidden;
+  }
+
+  .content-hub .t-feed__post-imgwrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content-hub .t-feed__post-label-wrapper {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .content-hub .t-feed__post-label span {
+    color: #fff;
+    font-size: 0.8em;
+    margin-right: 5px;
+  }
+
+  .content-hub .t-feed__textwrapper {
+    padding: 15px;
+  }
+
+  .content-hub .t-feed__post-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .content-hub  .t-feed__post-title a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .content-hub .t-feed__post-title a:hover {
+    color: #007BFF;
+  }
+
+  .content-hub .t-feed__post-descr {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .content-hub .t-feed__post-date {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #999;
+  }
+
+
