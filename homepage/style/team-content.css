@@ -1,102 +1,67 @@
 .team-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
-    gap: 20px; /* Больше пространства между элементами */
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    justify-items: center; /* Центрируем элементы по горизонтали */
-  }
-  
-  .team-container h1 {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #ca571e;
-    margin-bottom: 40px;
-    animation: fadeInUp 1.5s ease forwards;
-    opacity: 0;
-    transform: translateY(50px);
-    animation-delay: 1s;
-  }
-  
-  .team-member {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 1 / 1; /* Карточки остаются квадратными */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #fff;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px; /* Увеличиваем размер карточки */
-    height: 300px; /* Увеличиваем высоту карточки */
-    border-radius: 10px; /* Сглаженные углы */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень для карточек */
-  }
-  
-  .team-member:nth-child(odd) {
-    background-color: #ca571e;
-    color: #fff;
-  }
-  
-  .team-member:nth-child(even) {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .team-member:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 1;
-  }
-  
-  .team-member img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-    border-radius: 8px; /* Скругление для изображений */
-  }
-  
-  .team-member:hover img {
-    opacity: 1;
-  }
-  
-  .team-member .info {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    width: 100%;
-    padding: 10px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
-  }
-  
-  .team-member:hover .info {
-    transform: translateY(0);
-  }
-  
-  .team-member h3 {
-    font-size: 1.6em;
-    margin-bottom: 5px;
-  }
-  
-  .team-member p {
-    font-size: 1em;
-    margin: 0;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.team-container h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 800;
+  color: #ca571e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.team-member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: #fff;
+  border: 3px solid #ca571e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-member:nth-child(odd) {
+  background-color: #ca571e;
+  color: #fff;
+}
+
+.team-member:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.team-member img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  border-bottom: 3px solid #fff;
+}
+
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.info p {
+  font-size: 16px;
+  color: #666;
+}
