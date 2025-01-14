@@ -1,96 +1,153 @@
-/*Наше портфолио */
-.portfolio-section {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #fff;
-}
+ 
 
-.portfolio-section h2 {
-    font-size: 48px;
-    font-weight: 600;
-    color: #222;
-    margin-bottom: 50px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
-}
+
+
 
 .portfolio-container {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-}
-
-.small-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 3rem;
 }
 
-.small-item {
-    width: 180px;
-    height: 180px;
-    border-radius: 12px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+.portfolio-detail {
+    display: none;
 }
 
-.small-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+.portfolio-detail.active {
+    display: block;
 }
 
-.large-item {
-    width: 450px;
-    height: 450px;
-    border-radius: 20px;
-    background-size: cover;
-    background-position: center;
+.portfolio-box .numb {
+    font-size: 8rem;
+    -webkit-text-stroke: .07rem var(--white-color);
+    color: transparent;
+    line-height: 1;
+    color: black;
+}
+
+.portfolio-box h3 {
+    font-size: 3.5rem;
+    margin: .8rem 0 2rem;
+    color: black;
+}
+
+.portfolio-box p {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.portfolio-box .tech {
+    margin: 2rem 0;
+    color: black;
+    border-bottom: .1rem solid var(--white-color);
+    padding-bottom: 2rem;
+}
+
+.portfolio-box .live-github a {
     position: relative;
-    overflow: hidden;
-    transition: transform 0.5s ease;
+    display: inline-flex;
+    padding: 1.3rem;
+    font-size: 3rem;
+    color: var(--white-color);
+    border-radius: 50%;
+    background: #ededed;
+    transition: .5s;
 }
 
-.large-item:hover {
-    transform: scale(1.02);
+.portfolio-box .live-github a:hover {
+    color: black;
 }
 
-.large-item .overlay {
+.portfolio-box .live-github a:first-child {
+    margin-right: 1.5rem;
+}
+
+.portfolio-box .live-github a:first-child i {
+    transform: rotate(135deg);
+}
+
+.portfolio-box .live-github a span {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%) scale(.9);
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    pointer-events: none;
+    background: #ededed;
+    color: black;
+    opacity: 0;
+    transition: .2s;
+}
+
+.portfolio-box .live-github a:hover span {
+    top: -70%;
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.portfolio-carousel {
     width: 100%;
-    height: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    height: 45rem;
+    border-radius: 1rem;
+    overflow: hidden; /* Скрываем элементы, выходящие за пределы */
+}
+
+.portfolio-box .portfolio-carousel {
+    width: 100%;
+    height: 45rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.portfolio-carousel .img-slide {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: 500;
-    padding: 20px;
-    text-align: center;
-    transition: height 0.4s ease;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Контейнер слайдов должен занимать 100% ширины */
 }
 
-.large-item:hover .overlay {
+.portfolio-carousel .img-item {
+    height: inherit;
+    min-width: 100%;
+    height: inherit;
+}
+
+.portfolio-carousel .img-item img {
+    display: block;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
 }
 
-.portfolio-slider button {
-    background-color: transparent;
-    color: #333;
-    border: 2px solid #333;
-    padding: 12px 24px;
-    font-size: 18px;
+.portfolio-box .navigation {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.portfolio-box .navigation button {
+    display: inline-flex;
+    padding: .4rem;
+    background: #ededed;
+    border: .2rem solid black;
+    border-radius: .6rem;
+    font-size: 4rem;
+    color: black;
     cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.portfolio-slider button:hover {
-    background-color: #333;
-    color: #fff;
+.portfolio-box .navigation button.disabled {
+    border-color: #ededed;
+    color: #ca571e;
 }
+
+.portfolio-box .navigation .arrow-right {
+    margin-left: 1.5rem;
+}
+
+.portfolio-carousel {
+    overflow: hidden; /* Скрываем лишние слайды */
+}
+

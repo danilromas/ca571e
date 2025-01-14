@@ -1,161 +1,1420 @@
-<section class="project-process">
-    <div class="process-content">
-        <h2>Как мы готовим ваш проект</h2>
-        <div class="process-step active" data-step="1">
-            <img src="./image/idea.png" alt="Идея" class="process-image">
-            <div>
-                <h3>Формирование идеи</h3>
-                <p>Анализируем рынок и потребности клиента, создавая уникальную концепцию проекта.</p>
-            </div>
-        </div>
-        <div class="process-step" data-step="2">
-            <img src="./image/design.png" alt="Дизайн" class="process-image">
-            <div>
-                <h3>Дизайн и прототипирование</h3>
-                <p>Создаем стильный интерфейс и интерактивные прототипы для согласования.</p>
-            </div>
-        </div>
-        <div class="process-step" data-step="3">
-            <img src="./image/development.png" alt="Разработка" class="process-image">
-            <div>
-                <h3>Разработка</h3>
-                <p>Реализуем проект с использованием современных технологий.</p>
-            </div>
-        </div>
-        <div class="process-step" data-step="4">
-            <img src="./image/testing.png" alt="Тестирование" class="process-image">
-            <div>
-                <h3>Тестирование</h3>
-                <p>Проводим тщательное тестирование для обеспечения качества.</p>
-            </div>
-        </div>
-        <div class="process-step" data-step="5">
-            <img src="./image/launch.png" alt="Запуск" class="process-image">
-            <div>
-                <h3>Запуск и поддержка</h3>
-                <p>Запускаем проект и обеспечиваем техническую поддержку.</p>
-            </div>
-        </div>
-    </div>
-    <div class="process-navigation">
-        <div class="navigation-step active" data-step="1">
-            <span class="nav-icon">1</span>
-            <p>Идея</p>
-        </div>
-        <div class="navigation-step" data-step="2">
-            <span class="nav-icon">2</span>
-            <p>Дизайн</p>
-        </div>
-        <div class="navigation-step" data-step="3">
-            <span class="nav-icon">3</span>
-            <p>Разработка</p>
-        </div>
-        <div class="navigation-step" data-step="4">
-            <span class="nav-icon">4</span>
-            <p>Тестирование</p>
-        </div>
-        <div class="navigation-step" data-step="5">
-            <span class="nav-icon">5</span>
-            <p>Запуск</p>
-        </div>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Personal Portfolio Website Using HTML CSS & JavaScript | Codehal</title>
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="active">
+        <a href="#" class="logo">Lucius.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Resume</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- bars background -->
+    <div class="bars-box active">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <!-- home section -->
+    <section class="home active">
+        <div class="home-detail">
+            <h1>Lucius Meshach</h1>
+            <h2>I'm a
+                <span style="--i:4;" data-text="Coder">Coder</span>
+                <span style="--i:3;" data-text="Youtuber">Youtuber</span>
+                <span style="--i:2;" data-text="Blogger">Blogger</span>
+                <span style="--i:1;" data-text="Designer">Designer</span>
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem nulla sunt, dolores quo sint nobis autem magnam at, cupiditate id sapiente necessitatibus, reprehenderit animi alias dolore obcaecati fugit expedita.</p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-discord-alt'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="images/home.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section -->
+    <section class="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-code-alt'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ab commodi est dolor enim. Illo.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bxs-paint'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ab commodi est dolor enim. Illo.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-palette'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ab commodi est dolor enim. Illo.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-trending-up'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>SEO</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ab commodi est dolor enim. Illo.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-slideshow'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Video Editing</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ab commodi est dolor enim. Illo.</p>
+            </div>
+
+            <div class="services-box">
+                <div class="icon">
+                    <i class='bx bx-camera'></i>
+                    <a href="#"><i class='bx bx-arrow-back'></i></a>
+                </div>
+                <h3>Photography</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ab commodi est dolor enim. Illo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- resume section -->
+    <section class="resume">
+        <div class="resume-container">
+            <div class="resume-box">
+                <h2>Why Hire Me?</h2>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum temporibus dolorem ducimus beatae iure amet.</p>
+                <button class="resume-btn active">Experience</button>
+                <button class="resume-btn">Education</button>
+                <button class="resume-btn">Skills</button>
+                <button class="resume-btn">About Me</button>
+            </div>
+
+            <div class="resume-box">
+                <div class="resume-detail experience active">
+                    <h2 class="heading">My <span>Experience</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim corporis esse facilis tempore assumenda quidem quaerat expedita.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2023 - Present</p>
+                            <h3>Frontend Developer</h3>
+                            <p class="company">Abc Corp.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dignissimos.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2022 - 2023</p>
+                            <h3>Full Stack Developer</h3>
+                            <p class="company">Google</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dignissimos.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2021 - 2022</p>
+                            <h3>Backend Developer</h3>
+                            <p class="company">YouTube</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dignissimos.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2020 - 2021</p>
+                            <h3>Frontend Developer</h3>
+                            <p class="company">Xyz Inc.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dignissimos.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2019 - 2020</p>
+                            <h3>UI/UX Designer</h3>
+                            <p class="company">Abc Inc.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dignissimos.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2018 - 2019</p>
+                            <h3>Junior Developer</h3>
+                            <p class="company">Xyz Corp.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, dignissimos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail education">
+                    <h2 class="heading">My <span>Education</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim corporis esse facilis tempore assumenda quidem quaerat expedita.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p class="year">2024</p>
+                            <h3>Programming Course</h3>
+                            <p class="company">Online Course</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, harum.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2022 - 2023</p>
+                            <h3>Web Development Bootcamp</h3>
+                            <p class="company">Online Course Platform</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, harum.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2020</p>
+                            <h3>Certified Web Development</h3>
+                            <p class="company">Online Course</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, harum.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2017 - 2018</p>
+                            <h3>Doctor of Engineering</h3>
+                            <p class="company">Codehal University</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, harum.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2015 - 2017</p>
+                            <h3>Master of Computer Science</h3>
+                            <p class="company">Codehal University</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, harum.</p>
+                        </div>
+                        <div class="resume-item">
+                            <p class="year">2012 - 2015</p>
+                            <h3>Bachelor of Data Science</h3>
+                            <p class="company">Codehal University</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, harum.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail skills">
+                    <h2 class="heading">My <span>Skills</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim corporis esse facilis tempore assumenda quidem quaerat expedita.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <i class='bx bxl-html5'></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-css3'></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-javascript'></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-react'></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-vuejs'></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-tailwind-css'></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-nodejs'></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxl-mongodb'></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-detail about">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, exercitationem nihil enim corporis esse facilis tempore assumenda quidem quaerat expedita.</p>
+                    <div class="resume-list">
+                        <div class="resume-item">
+                            <p>Name <span>Lucius Meshach</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Gender <span>Male</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Age <span>32 Years Old</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Status <span>Married</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>City <span>San Francisco</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Nationality <span>American</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Experience <span>10+ Years</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Full Time <span>Available</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Freelance <span>Available</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Phone <span>(+12) 345 678 910</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Email <span>lucius@gmail.com</span></p>
+                        </div>
+                        <div class="resume-item">
+                            <p>Languages <span>English, French</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section class="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <div class="portfolio-detail active">
+                    <p class="numb">01</p>
+                    <h3>Frontend Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores natus rerum saepe. Eum modi assumenda quaerat temporibus.</p>
+                    <div class="tech">
+                        <p>HTML5, CSS3, JavaScript</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">02</p>
+                    <h3>Full Stack Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores natus rerum saepe. Eum modi assumenda quaerat temporibus.</p>
+                    <div class="tech">
+                        <p>MongoDB, Express.js, React.js, Node.js</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">03</p>
+                    <h3>Frontend Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores natus rerum saepe. Eum modi assumenda quaerat temporibus.</p>
+                    <div class="tech">
+                        <p>React.js, Tailwind CSS</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">04</p>
+                    <h3>Full Stack Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores natus rerum saepe. Eum modi assumenda quaerat temporibus.</p>
+                    <div class="tech">
+                        <p>MongoDB, Express.js, AngularJS, Node.js</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">05</p>
+                    <h3>Frontend Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores natus rerum saepe. Eum modi assumenda quaerat temporibus.</p>
+                    <div class="tech">
+                        <p>Vue.js, Tailwind CSS</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+
+                <div class="portfolio-detail">
+                    <p class="numb">06</p>
+                    <h3>Full Stack Project</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores natus rerum saepe. Eum modi assumenda quaerat temporibus.</p>
+                    <div class="tech">
+                        <p>MongoDB, Express.js, Vue.js, Node.js</p>
+                    </div>
+                    <div class="live-github">
+                        <a href="#"><i class='bx bx-arrow-back'></i><span>Live Project</span></a>
+                        <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <div class="portfolio-carousel">
+                    <div class="img-slide">
+                        <div class="img-item">
+                            <img src="images/portfolio1.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio2.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio3.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio4.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio5.jpg">
+                        </div>
+                        <div class="img-item">
+                            <img src="images/portfolio6.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i></button>
+                    <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact">
+        <div class="contact-container">
+            <div class="contact-box">
+                <h2>Let's Work Together</h2>
+                <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem illo magni similique velit at mollitia corporis quaerat eaque asperiores.</p>
+                <div class="contact-detail">
+                    <i class='bx bxs-phone'></i>
+                    <div class="detail">
+                        <p>Phone</p>
+                        <p>(+12) 345 678 910</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bxs-envelope'></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>youremail@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <i class='bx bxs-map'></i>
+                    <div class="detail">
+                        <p>Address</p>
+                        <p>123 Anywhere Street, Any City</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <form action="">
+                    <h2 class="heading">Contact <span>Me!</span></h2>
+                    <div class="field-box">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <input type="text" placeholder="Phone Number" required>
+                        <input type="text" placeholder="Email Subject" required>
+                        <textarea name="" id="" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
 <style>
-.project-process {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --main-color: #7cf03d;
+    --white-color: #fff;
+    --disabled-color: #fff3;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--white-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
     display: flex;
     justify-content: space-between;
-    padding: 100px 5%;
-    background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
-    color: #333;
-    font-family: 'Segoe UI', sans-serif;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
 }
 
-.process-content {
-    width: 60%;
+header.active {
+    animation: show-header 1.5s linear forwards;
+    animation-delay: 1.2s;
 }
 
-.process-content h2 {
-    font-size: 48px;
-    color: #2a5298;
-    text-align: center;
-    margin-bottom: 50px;
+@keyframes show-header {
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
-.process-step {
+.logo {
+    font-size: 3rem;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+nav a {
+    font-size: 2rem;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .5s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 4rem;
+    display: none;
+}
+
+.bars-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.bars-box .bar {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: hide-bars .5s ease-in-out both;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes hide-bars {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.bars-box.active .bar {
+    animation: show-bars .5s ease-in-out both;
+    animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes show-bars {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10rem 9% 2rem;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+}
+
+section.active {
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.6s;
+}
+
+@keyframes show-content {
+    100% {
+        visibility: visible;
+        opacity: 1;
+        overflow: auto;
+    }
+}
+
+.home {
     display: flex;
     align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    gap: 5rem;
 }
 
-.process-step:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+.home-detail h1 {
+    font-size: clamp(3.5rem, 10vw, 5.5rem);
 }
 
-.process-image {
-    width: 90px;
-    height: 90px;
-    margin-right: 20px;
-    border-radius: 15px;
+.home-detail h2 {
+    display: inline-block;
+    font-size: 3.2rem;
+    margin-top: -1rem;
+}
+
+.home-detail h2 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .07rem var(--main-color);
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+
+@keyframes display-text {
+
+    25%,
+    100% {
+        display: none;
+    }
+}
+
+.home-detail h2 span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: .2rem solid var(--main-color);
+    color: var(--main-color);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+}
+
+@keyframes fill-text {
+
+    10%,
+    100% {
+        width: 0;
+    }
+
+    70%,
+    90% {
+        width: 100%;
+    }
+}
+
+.home-detail p {
+    font-size: 1.6rem;
+    margin: 1rem 0 2.5rem;
+}
+
+.home-detail .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    box-shadow: none;
+}
+
+.home-detail .btn-sci .sci {
+    margin-left: 2rem;
+}
+
+.home-detail .btn-sci .sci a {
+    display: inline-flex;
+    padding: .8rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 0 .8rem;
+    transition: .5s;
+}
+
+.home-detail .btn-sci .sci a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.home-img .img-box {
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    background: conic-gradient(transparent, transparent, transparent, var(--main-color));
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+.home-img .img-box::after {
+    animation-delay: -5s;
+}
+
+@keyframes rotate-border {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    border-radius: 50%;
+    border: .01rem solid var(--bg-color);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-img .img-box .img-item img {
+    position: absolute;
+    top: 3rem;
+    display: block;
+    width: 85%;
     object-fit: cover;
+    mix-blend-mode: lighten;
 }
 
-.process-navigation {
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.services-container .services-box {
+    padding: 3rem 2.5rem;
+    background: var(--second-bg-color);
+    border: .2rem solid var(--second-bg-color);
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.services-container .services-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.services-box .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-box .icon i {
+    font-size: 4.5rem;
+    transition: .5s;
+}
+
+.services-box:hover .icon :not(a i) {
+    color: var(--main-color);
+}
+
+.services-box .icon a {
+    display: inline-flex;
+    background: var(--white-color);
+    border-radius: 50%;
+    padding: 1rem;
+    transition: .5s;
+}
+
+.services-box:hover .icon a {
+    background: var(--main-color);
+}
+
+.services-box .icon a i {
+    font-size: 3rem;
+    color: var(--bg-color);
+    transform: rotate(225deg);
+}
+
+.services-box .icon a:hover i {
+    transform: rotate(180deg);
+}
+
+.services-box h3 {
+    font-size: 3rem;
+    margin: .5rem 0 2rem;
+    transition: .5s;
+}
+
+.services-box:hover h3 {
+    color: var(--main-color);
+}
+
+.services-box p {
+    font-size: 1.6rem;
+}
+
+.resume-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+}
+
+.resume-box h2 {
+    font-size: 4.5rem;
+}
+
+.resume-box p {
+    font-size: 1.6rem;
+}
+
+.resume-box .desc {
+    margin: 2rem 0 2.5rem;
+}
+
+.resume-box .resume-btn {
+    width: 100%;
+    height: 5.3rem;
+    background: var(--second-bg-color);
+    border: .2rem solid var(--second-bg-color);
+    font-size: 1.6rem;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.resume-box .resume-btn.active {
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+.resume-detail {
+    display: none;
+}
+
+.resume-detail.active {
+    display: block;
+}
+
+.resume-box .heading {
+    font-size: 3.5rem;
+    text-align: left;
+}
+
+.resume-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    height: 45rem;
+    overflow: auto;
+}
+
+.resume-list::-webkit-scrollbar {
+    width: .7rem;
+}
+
+.resume-list::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 1rem;
+}
+
+.resume-list:hover::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+.resume-list .resume-item {
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    padding: 3rem 2.5rem;
+    height: calc((45rem - 2rem) / 2);
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-.navigation-step {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.navigation-step:hover, .navigation-step.active {
-    background-color: #2a5298;
-    color: #fff;
-    transform: scale(1.05);
-}
-
-.nav-icon {
-    background-color: #2a5298;
-    color: #fff;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin-right: 10px;
-    font-weight: bold;
 }
+
+.resume-item .year {
+    color: var(--main-color);
+}
+
+.resume-item h3 {
+    font-size: 2.2rem;
+}
+
+.resume-item .company {
+    position: relative;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.resume-item .company::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: .5rem;
+    background: var(--main-color);
+    border-radius: 50%;
+    margin-left: -2rem;
+}
+
+.resume-detail.skills .resume-list {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    height: auto;
+    overflow: visible;
+}
+
+.resume-detail.skills .resume-item {
+    position: relative;
+    align-items: center;
+    height: auto;
+}
+
+.resume-detail.skills .resume-item i {
+    font-size: 8.5rem;
+    transition: .5s;
+}
+
+.resume-detail.skills .resume-item:hover i {
+    color: var(--main-color);
+}
+
+.resume-detail.skills .resume-item span {
+    position: absolute;
+    top: -20%;
+    background: var(--white-color);
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.9);
+    transition: .2s;
+}
+
+.resume-detail.skills .resume-item:hover span {
+    top: -25%;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.resume-detail.about .resume-list {
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.resume-detail.about .resume-item {
+    height: auto;
+    padding: 0 0 .5rem;
+    background: transparent;
+}
+
+.resume-detail.about .resume-item p {
+    color: var(--main-color);
+}
+
+.resume-detail.about .resume-item p span {
+    color: var(--white-color);
+    margin-left: 1rem;
+    font-size: 1.8rem;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.portfolio-detail {
+    display: none;
+}
+
+.portfolio-detail.active {
+    display: block;
+}
+
+.portfolio-box .numb {
+    font-size: 8rem;
+    -webkit-text-stroke: .07rem var(--white-color);
+    color: transparent;
+    line-height: 1;
+}
+
+.portfolio-box h3 {
+    font-size: 3.5rem;
+    margin: .8rem 0 2rem;
+}
+
+.portfolio-box p {
+    font-size: 1.6rem;
+}
+
+.portfolio-box .tech {
+    margin: 2rem 0;
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--white-color);
+    padding-bottom: 2rem;
+}
+
+.portfolio-box .live-github a {
+    position: relative;
+    display: inline-flex;
+    padding: 1.3rem;
+    font-size: 3rem;
+    color: var(--white-color);
+    border-radius: 50%;
+    background: var(--second-bg-color);
+    transition: .5s;
+}
+
+.portfolio-box .live-github a:hover {
+    color: var(--main-color);
+}
+
+.portfolio-box .live-github a:first-child {
+    margin-right: 1.5rem;
+}
+
+.portfolio-box .live-github a:first-child i {
+    transform: rotate(135deg);
+}
+
+.portfolio-box .live-github a span {
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%) scale(.9);
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding: .5rem 1rem;
+    border-radius: .6rem;
+    pointer-events: none;
+    background: var(--white-color);
+    color: var(--bg-color);
+    opacity: 0;
+    transition: .2s;
+}
+
+.portfolio-box .live-github a:hover span {
+    top: -70%;
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.portfolio-box .portfolio-carousel {
+    width: 100%;
+    height: 45rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.portfolio-carousel .img-slide {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 2rem;
+    height: inherit;
+    transition: .5s;
+}
+
+.portfolio-carousel .img-item {
+    height: inherit;
+}
+
+.portfolio-carousel .img-item img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.portfolio-box .navigation {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.portfolio-box .navigation button {
+    display: inline-flex;
+    padding: .4rem;
+    background: var(--second-bg-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    font-size: 4rem;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.portfolio-box .navigation button.disabled {
+    border-color: var(--second-bg-color);
+    color: var(--disabled-color);
+}
+
+.portfolio-box .navigation .arrow-right {
+    margin-left: 1.5rem;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+}
+
+.contact-container .contact-box:first-child {
+    align-self: center;
+}
+
+.contact-box h2 {
+    font-size: 4.5rem;
+}
+
+.contact-box p {
+    font-size: 1.6rem;
+}
+
+.contact-box .desc {
+    margin: 1.5rem 0 2.5rem;
+}
+
+.contact-box .contact-detail {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.contact-detail i {
+    display: inline-flex;
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    font-size: 3rem;
+    padding: 1.2rem;
+    border-radius: .6rem;
+    margin-right: 1.5rem;
+}
+
+.contact-detail .detail p:first-child {
+    color: var(--main-color);
+}
+
+.contact-box form {
+    background: var(--second-bg-color);
+    padding: 2.5rem 3.5rem 3.5rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.contact-box .heading {
+    font-size: 3.5rem;
+}
+
+.contact-box .field-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.contact-box .field-box input,
+.contact-box .field-box textarea {
+    padding: 1.5rem;
+    background: var(--bg-color);
+    border: .15rem solid var(--bg-color);
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+}
+
+.contact-box .field-box textarea {
+    grid-column: 1 / -1;
+    height: 26rem;
+    resize: none;
+}
+
+.contact-box .field-box input:focus,
+.contact-box .field-box textarea:focus {
+    border-color: var(--main-color);
+}
+
+.contact-box .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* breakpoints */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .contact-box .field-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        text-align: center;
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        margin: 4rem 0;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .home-img .img-box {
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .resume-container,
+    .portfolio-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-container {
+        gap: 3rem;
+    }
+
+    .portfolio-container .portfolio-box:first-child {
+        order: 1;
+    }
+
+    .contact-box .field-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home-img .img-box {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .contact-box .field-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .home-detail,
+    .resume-box h2,
+    .resume-box .heading,
+    .resume-box .desc,
+    .resume-detail.about .resume-item {
+        text-align: center;
+    }
+
+    .home-detail .btn-sci {
+        flex-direction: column-reverse;
+    }
+
+    .home-detail .btn-sci .sci {
+        margin-left: 0;
+        margin-bottom: 2rem;
+    }
+
+    .contact-box form {
+        padding: 2.5rem 3rem 3.5rem;
+    }
+
+    .contact-box h2 {
+        font-size: 3.5rem;
+    }
+}
+
 </style>
 
 <script>
-const steps = document.querySelectorAll('.process-step');
-const navSteps = document.querySelectorAll('.navigation-step');
+document.addEventListener("DOMContentLoaded", function() {
+  const arrowRight = document.querySelector('.portfolio-box .navigation .arrow-right');
+  const arrowLeft = document.querySelector('.portfolio-box .navigation .arrow-left');
+  const portfolioDetails = document.querySelectorAll('.portfolio-detail');
+  const imgSlide = document.querySelector('.portfolio-carousel .img-slide');
 
-navSteps.forEach(step => {
-    step.addEventListener('click', () => {
-        const stepNum = step.getAttribute('data-step');
+  let index = 0;
 
-        steps.forEach(s => s.classList.remove('active'));
-        document.querySelector(`.process-step[data-step="${stepNum}"]`).classList.add('active');
+  const activePortfolio = () => {
+    imgSlide.style.transform = `translateX(-${index * 100}%)`;
 
-        navSteps.forEach(n => n.classList.remove('active'));
-        step.classList.add('active');
+    portfolioDetails.forEach((detail, idx) => {
+      detail.classList.toggle('active', idx === index);
     });
+
+    // Деактивировать кнопки при достижении краев
+    arrowLeft.classList.toggle('disabled', index === 0);
+    arrowRight.classList.toggle('disabled', index === portfolioDetails.length - 1);
+  };
+
+  // Кнопка вправо
+  arrowRight.addEventListener('click', () => {
+    if (index < portfolioDetails.length - 1) {
+      index++;
+      activePortfolio();
+    }
+  });
+
+  // Кнопка влево
+  arrowLeft.addEventListener('click', () => {
+    if (index > 0) {
+      index--;
+      activePortfolio();
+    }
+  });
+
+  // Инициализация активного слайда
+  activePortfolio();
 });
 </script>
+</body>
+
+</html>
